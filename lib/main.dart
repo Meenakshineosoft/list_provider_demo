@@ -10,7 +10,7 @@ class App extends StatelessWidget {
     return MaterialApp(
         title: "User List",
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(primarySwatch: Colors.blue),
+        theme: ThemeData(primarySwatch: Colors.teal),
         home:
         ChangeNotifierProvider(
           create: (context) => UserListViewModel(),
