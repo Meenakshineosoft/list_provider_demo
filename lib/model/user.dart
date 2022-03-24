@@ -1,4 +1,5 @@
 class User {
+
   final int userId;
   final int id;
   final String title;
@@ -18,5 +19,6 @@ class User {
       title: json['title'],
       body: json['body'],
     );
+
   }
 }

@@ -15,7 +15,7 @@ class UserViewModel {
     return user.id;
   }
 
-  String get title {
+  String get  title {
    return user.title;
   }
 

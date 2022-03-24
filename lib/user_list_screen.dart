@@ -9,28 +9,13 @@ import 'package:list_provider/view_model/user_view_model.dart';
 
 import 'package:provider/provider.dart';
 
-
-void main() => runApp(const UserListScreen());
-
-class UserListScreen extends StatefulWidget {
+class UserListScreen extends StatelessWidget {
   const UserListScreen({Key? key}) : super(key: key);
 
   @override
-  _UserListScreenState createState() => _UserListScreenState();
-}
-
-class _UserListScreenState extends State<UserListScreen> {
-
-
- @override
-  void initState() {
-    super.initState();
-    Provider.of<UserListViewModel>(context, listen: false).fetchUser();
-
-  }
-
-  @override
   Widget build(BuildContext context) {
+
+    Provider.of<UserListViewModel>(context, listen: false).fetchUser();
 
     final vm = Provider.of<UserListViewModel>(context);
 
