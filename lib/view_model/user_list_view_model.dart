@@ -11,4 +11,5 @@ class UserListViewModel extends ChangeNotifier {
     users = results.map((item) => UserViewModel(user: item)).toList();
     notifyListeners();
   }
+
 }

@@ -22,4 +22,5 @@ class UserViewModel {
   String get body {
     return user.body;
   }
+
 }

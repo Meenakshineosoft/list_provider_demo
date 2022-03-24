@@ -18,4 +18,5 @@ class UserService {
        throw Exception('Failed to load user data');
      }
   }
+
 }
